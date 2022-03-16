@@ -1,0 +1,25 @@
+﻿<Page x:Class="WpfApp3.Pages.AddNumberPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddNumberPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="a" FontSize="17"  Width="40" Height="40" Margin="0 0 5 0"/>
+                <Label Content="+" FontSize="17" Margin="0 0 5 0"/>
+                <TextBox x:Name="b" FontSize="17"  Width="40" Height="40" Margin="0 0 5 0"/>
+                <Label Content="=" FontSize="17" Margin="0 0 5 0"/>
+                <TextBlock x:Name="result" Width="60" Height="40" FontSize="17" Margin="0 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" >
+                <Button Content="Посчитать" FontSize="17" Width="120" Height="30" Margin="0 10 0 0" Click="BtnAdd"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
